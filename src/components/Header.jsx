@@ -13,7 +13,12 @@ import MenuItem from "@mui/material/MenuItem";
 import Vector from "../images/Vector.png";
 import { Stack } from "@mui/system";
 
-const pages = [ {name: "About", path: "/"},{name: 'Service', path: "/Service"},{name: "Modi-Core", path: "/Modi-Core"},{name: "Blog", path: "/Blog"}]
+const pages = [
+  { name: "About", path: "/" },
+  { name: "Service", path: "/Service" },
+  { name: "Modi-Core", path: "/Modi-Core" },
+  { name: "Blog", path: "/Blog" },
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -42,11 +47,12 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-          color='#062D3E' fontSize='21px' fontWeight={600}
+            color="#062D3E"
+            fontSize="21px"
+            fontWeight={600}
             variant="h6"
             noWrap
             component="a"
-            
           >
             Pet-First
           </Typography>
@@ -104,20 +110,26 @@ function ResponsiveAppBar() {
                   top: "0.94px",
                   left: "-0.06",
                   textAlign: "center",
-                  backgroundImage: page.path === window.location.pathname ?  `url(${Vector})` : null,
+                  backgroundImage:
+                    page.path === window.location.pathname
+                      ? `url(${Vector})`
+                      : null,
                 }}
-                justifyContent='center'
-                alignItems='center'
+                justifyContent="center"
+                alignItems="center"
               >
                 <Typography
-                fontSize='14px' fontWeight={400}
-                fontFamily='Josefin Sans'
+                  fontSize="14px"
+                  fontWeight={400}
+                  fontFamily="Josefin Sans"
                   key={page.name}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2,  cursor:'pointer',
-                 }}
-                 color={page.path === window.location.pathname ?  `#FFFFFF` : '#062D3E'}
-                  
+                  sx={{ my: 2, cursor: "pointer" }}
+                  color={
+                    page.path === window.location.pathname
+                      ? `#FFFFFF`
+                      : "#062D3E"
+                  }
                 >
                   {page.name}
                 </Typography>

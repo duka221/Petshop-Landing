@@ -7,8 +7,6 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import { useState } from "react";
 import avatar1 from "../images/avatar1.png";
-import avatar2 from "../images/avatar2.jpg";
-import avatar3 from "../images/avatar3.jpg";
 import { Typography } from "@mui/material";
 
 export const Reviews = () => {
@@ -46,84 +44,92 @@ export const Reviews = () => {
       backgroundColor="#EBE3CC"
     >
       <Box sx={{ maxWidth: "lg", width: 1 }}>
-                <Stack
-                direction="row"
-                alignItems="center"
-                justifyContent="space-around"
-                gap={10}
+        <Stack
+          direction="row"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <Box
+            component="img"
+            src={Person[0].image}
+            sx={{ width: "350px", height: "400px" }}
+          />
+          <Stack
+            direction="column"
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            width="400px"
+            gap={2}
+          >
+            <Typography
+              fontSize="46px"
+              fontWeight={600}
+              fontFamily="Josefin Sans"
+              color="#062D3E"
+              lineHeight="60px"
+            >
+              Customer Reviews
+            </Typography>
+            <Box>
+              <Typography
+                fontSize="22px"
+                fontWeight={500}
+                fontFamily="Josefin Sans"
+                color="#062D3E"
+                textAlign="start"
+                lineHeight="34px"
               >
-                <Box
-                  component="img"
-                  src={Person[0].image}
-                  sx={{ width: "300px", height: "400px" }}
-                />
-                <Stack direction="column" display="flex" gap={2}>
-                  <Typography
-                    fontSize="46px"
-                    fontWeight={600}
-                    fontFamily="Josefin Sans"
-                    color="#062D3E"
-                    lineHeight="60px"
-                  >
-                    Customer Reviews
-                  </Typography>
-                  <Typography
-                    fontSize="22px"
-                    fontWeight={500}
-                    fontFamily="Josefin Sans"
-                    color="#062D3E"
-                    textAlign="start"
-                    lineHeight="34px"
-                  >
-                   {Person[activeStep].text}
-                  </Typography>
-                  <Stack direction="column"></Stack>
-      
-                  <Box sx={{ justifyContent: "flex-start" }}></Box>
-                  <MobileStepper
-                    variant="dots"
-                    steps={3}
-                    position="static"
-                    activeStep={activeStep}
-                    sx={{
-                      borderStyle: "rounded",
-                      borderRadius: 50,
-                      maxWidth: 200,
-                      alignItems: "center",
-                      backgroundColor: "#189CAB",
-                    }}
-                    nextButton={
-                      <Button
-                        size="small"
-                        onClick={handleNext}
-                        disabled={activeStep === 2}
-                        sx={{ color: "#FFFFFF" }}
-                      >
-                        {theme.direction === "rtl" ? (
-                          <KeyboardArrowLeft />
-                        ) : (
-                          <KeyboardArrowRight />
-                        )}
-                      </Button>
-                    }
-                    backButton={
-                      <Button
-                        size="small"
-                        onClick={handleBack}
-                        disabled={activeStep === 0}
-                        sx={{ color: "#FFFFFF" }}
-                      >
-                        {theme.direction === "rtl" ? (
-                          <KeyboardArrowRight />
-                        ) : (
-                          <KeyboardArrowLeft />
-                        )}
-                      </Button>
-                    }
-                  />
-                </Stack>
-              </Stack>
-        
+                {Person[activeStep].text}
+              </Typography>
+            </Box>
+
+            <Stack direction="column"></Stack>
+
+            <Box sx={{ justifyContent: "flex-start" }}></Box>
+            <MobileStepper
+              variant="dots"
+              steps={3}
+              position="static"
+              activeStep={activeStep}
+              sx={{
+                borderStyle: "rounded",
+                borderRadius: 50,
+                maxWidth: 200,
+                alignItems: "center",
+                backgroundColor: "#189CAB",
+              }}
+              nextButton={
+                <Button
+                  size="small"
+                  onClick={handleNext}
+                  disabled={activeStep === 2}
+                  sx={{ color: "#FFFFFF" }}
+                >
+                  {theme.direction === "rtl" ? (
+                    <KeyboardArrowLeft />
+                  ) : (
+                    <KeyboardArrowRight />
+                  )}
+                </Button>
+              }
+              backButton={
+                <Button
+                  size="small"
+                  onClick={handleBack}
+                  disabled={activeStep === 0}
+                  sx={{ color: "#FFFFFF" }}
+                >
+                  {theme.direction === "rtl" ? (
+                    <KeyboardArrowRight />
+                  ) : (
+                    <KeyboardArrowLeft />
+                  )}
+                </Button>
+              }
+            />
+          </Stack>
+        </Stack>
       </Box>
     </Stack>
   );

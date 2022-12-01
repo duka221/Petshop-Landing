@@ -26,8 +26,9 @@ export const Service = () => {
         display="flex"
         justifyContent="space-between"
         backgroundColor="#ED5C01"
+        minHeight="100%"
       >
-        <Box sx={{ maxWidth: "100%", minHeight: "50vh" }}>
+        <Box sx={{ maxWidth: "100%" }}>
           <Stack direction="row" justifyContent="space-between">
             <Box component="img" src={Vector2} width="143px" height="143px" />
             <Box
@@ -53,15 +54,16 @@ export const Service = () => {
             </Box>
             <Stack
               direction="column"
-s              alignItems="center"
+              s
+              alignItems="center"
               justifyContent="center"
             >
               <Stack direction="row" gap={3} alignItems="center">
-                <Stack direction="column"gap={2}>
+                <Stack direction="column" gap={2}>
                   <Box component="img" src={dog9} width="95px" height="95px" />
                   <Box component="img" src={dog5} width="95px" height="95px" />
                 </Stack>
-                <Stack justifyContent='center'  alignItems='center'>
+                <Stack justifyContent="center" alignItems="center">
                   <Typography
                     textAlign="center"
                     lineHeight="92px"
@@ -82,7 +84,7 @@ s              alignItems="center"
                   />
                 </Stack>
                 <Stack direction="column" gap={2}>
-                  <Stack gap={2} direction='row'>
+                  <Stack gap={2} direction="row">
                     {images.map((image) => (
                       <Box
                         component="img"
@@ -92,7 +94,7 @@ s              alignItems="center"
                       />
                     ))}
                   </Stack>
-                  <Stack gap={2} direction='row'>
+                  <Stack gap={2} direction="row">
                     {images2.map((image) => (
                       <Box
                         component="img"

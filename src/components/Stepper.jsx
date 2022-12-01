@@ -4,15 +4,14 @@ import MobileStepper from "@mui/material/MobileStepper";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import dog1 from "../images/dog1.png"
-import dog2 from "../images/dog2.png"
-import dog3 from "../images/dog3.png"
-
+import dog1 from "../images/dog1.png";
+import dog2 from "../images/dog2.png";
+import dog3 from "../images/dog3.png";
 
 import { Box } from "@mui/material";
 
 export default function SwipeableTextStepper() {
-  const sliderImages = [dog1,dog2,dog3]
+  const sliderImages = [dog1, dog2, dog3];
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
 
