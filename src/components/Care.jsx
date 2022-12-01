@@ -7,17 +7,17 @@ import { Button, Typography } from "@mui/material";
 export const Care = () => {
   return (
     <Stack
-      display="flex"
-      justifyContent="space-between"
+      justifyContent="center"
+      alignItems="center"
       backgroundColor="#189CAB"
+      position='relative'
     >
-      <Box sx={{ maxWidth: "lg", width: 1 }}>
-        <Box component="img" src={PetCare} sx={{ float: "left", mt: 45 }}></Box>
+
+      <Box sx={{ maxWidth: "lg", width: 1 , py:5}}>
         <Stack
           display="flex"
           direction="row"
           justifyContent="space-around"
-          mt={10}
           gap={5}
         >
           <Box component="img" src={AboutPet} />
@@ -43,7 +43,7 @@ export const Care = () => {
               - shy, sensitive, alert, and faithful. This is a breed that has
               climbed its way to being top dog because of its intelligence
             </Typography>
-            <Stack direction="column">
+            <Stack direction="column" display="flex" float="right">
               <Stack direction="row" gap={1}>
                 <Box
                   sx={{
@@ -125,6 +125,7 @@ export const Care = () => {
             </Box>
           </Stack>
         </Stack>
+        <Box component="img" src={PetCare} sx={{ position:"absolute", top:"50%", left: 0}}></Box>
         <Box
           component="img"
           src={Group}

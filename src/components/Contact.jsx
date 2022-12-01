@@ -1,6 +1,7 @@
 import { TextField, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import dog1 from "../images/ContactDog.png";
+import rqa from "../images/rqa.png";
 
 export const Contact = () => {
   return (
@@ -15,7 +16,7 @@ export const Contact = () => {
         padding: 0,
       }}
     >
-      <Box sx={{ maxWidth: "lg", width: 1 }}>
+      <Box sx={{ maxWidth: "lg", width: 1 ,py: 5}}>
         <Stack
           display="flex"
           direction="row"
@@ -23,7 +24,27 @@ export const Contact = () => {
           justifyContent="space-between"
           gap={2}
         >
-          <Box component="img" src={dog1} />
+          <Box sx={{ position: "relative" }}>
+            <Box sx={{ width: 400, height: 380 }}>
+              <Box
+                component="img"
+                src={dog1}
+                sx={{ position: "absolute", left:"25%", zIndex: 2 }}
+              />
+            </Box>
+            <Box
+              component="img"
+              src={rqa}
+              sx={{
+                transform: "rotate(90)",
+                position: "absolute",
+                top: "50%",
+                zIndex: 1,
+                left: 0,
+              }}
+            />
+          </Box>
+
           <Box>
             <Stack width="400px">
               <Typography

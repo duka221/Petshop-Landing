@@ -43,7 +43,7 @@ export const Reviews = () => {
       minHeight="100%"
       backgroundColor="#EBE3CC"
     >
-      <Box sx={{ maxWidth: "lg", width: 1 }}>
+      <Box sx={{ maxWidth: "lg", width: 1,py: 5 }}>
         <Stack
           direction="row"
           alignItems="center"

@@ -17,7 +17,7 @@ import dog11 from "../images/Ellipse 345.png";
 import dog12 from "../images/Ellipse 346.png";
 import dog13 from "../images/Ellipse 340.png";
 
-export const Service = () => {
+export const Pets = () => {
   const images = [dog1, dog2, dog3, dog5, dog6, dog7];
   const images2 = [dog8, dog9, dog10, dog11, dog12, dog13];
   return (
@@ -28,7 +28,7 @@ export const Service = () => {
         backgroundColor="#ED5C01"
         minHeight="100%"
       >
-        <Box sx={{ maxWidth: "100%" }}>
+        <Box sx={{ maxWidth: "100%" ,py: 2}}>
           <Stack direction="row" justifyContent="space-between">
             <Box component="img" src={Vector2} width="143px" height="143px" />
             <Box
