@@ -87,6 +87,7 @@ export const Pets = () => {
                   <Stack gap={2} direction="row">
                     {images.map((image) => (
                       <Box
+                        key={image}
                         component="img"
                         src={image}
                         width="80px"
@@ -97,6 +98,7 @@ export const Pets = () => {
                   <Stack gap={2} direction="row">
                     {images2.map((image) => (
                       <Box
+                      key={image}
                         component="img"
                         src={image}
                         width="80px"
@@ -107,40 +109,7 @@ export const Pets = () => {
                 </Stack>
               </Stack>
 
-              {/* <Stack direction="row" gap={3}>
-                <Box component="img" src={dog9} width="95px" height="95px" />
-                <Box bottom="50px">
-                  <Typography
-                    textAlign="center"
-                    lineHeight="92px"
-                    color="#FFFFFF"
-                    textTransform="capitalize"
-                    fontFamily="Josefin Sans"
-                    fontSize="33px"
-                    fontWeight={500}
-                  >
-                    {" "}
-                    Dog (JASPER){" "}
-                  </Typography>
-                </Box>
-                {images.map((image)=>(
-                <Box component="img" src={image} width="80px" height="80px" />
-                ))}
-              </Stack>
-              <Stack direction="row" gap={4}>
-              <Box component="img" src={dog6} width="95px" height="95px" />
-              <Box
-                  component="img"
-                  src={DogPic}
-                  width="150px"
-                  height="150px"
-                />
-              {images2.map((image)=>(    
-                <Box component="img" src={image} width="80px" height="80px" />
-                ))}
-                
               
-              </Stack> */}
             </Stack>
           </Stack>
         </Box>

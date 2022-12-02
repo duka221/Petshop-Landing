@@ -103,6 +103,7 @@ function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <Stack
+              key={page.name}
                 sx={{
                   ":hover": { backgroundImage: `url(${Vector})` },
                   width: "118px",
@@ -122,7 +123,6 @@ function ResponsiveAppBar() {
                   fontSize="14px"
                   fontWeight={400}
                   fontFamily="Josefin Sans"
-                  key={page.name}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, cursor: "pointer" }}
                   color={

@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
-import dots from "../images/dots.png";
 
 export const Footer = () => {
   return (
