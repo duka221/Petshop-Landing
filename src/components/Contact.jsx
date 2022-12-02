@@ -17,7 +17,7 @@ export const Contact = () => {
         padding: 0,
       }}
     >
-      <Box sx={{ maxWidth: "lg", width: 1 ,py: 5}}>
+      <Box sx={{ maxWidth: "lg", width: 1}}>
         <Stack
           display="flex"
           direction="row"
@@ -26,11 +26,11 @@ export const Contact = () => {
           gap={2}
         >
           <Box sx={{ position: "relative" }}>
-            <Box sx={{ width: 400, height: 380 }}>
+            <Box sx={{ width: 400, height: 320 }}>
               <Box
                 component="img"
                 src={dog1}
-                sx={{ position: "absolute", left:"25%", zIndex: 2 }}
+                sx={{ position: "absolute", left:"25%", zIndex: 2,bottom:0 }}
               />
             </Box>
             <Box

@@ -17,7 +17,7 @@ export const First = () => {
         padding: 0,
       }}
     >
-      <Box sx={{ maxWidth: "lg", width: 1,py: 4 }}>
+      <Box sx={{ maxWidth: "lg", width: 1, py: 4 }}>
         <ResponsiveAppBar />
         <Stack direction="row" justifyContent="space-between" width={1}>
           <Stack direction="column">

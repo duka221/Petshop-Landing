@@ -28,7 +28,7 @@ export const Pets = () => {
         backgroundColor="#ED5C01"
         minHeight="100%"
       >
-        <Box sx={{ maxWidth: "100%" ,py: 2}}>
+        <Box sx={{ maxWidth: "100%", py: 2 }}>
           <Stack direction="row" justifyContent="space-between">
             <Box component="img" src={Vector2} width="143px" height="143px" />
             <Box
@@ -98,7 +98,7 @@ export const Pets = () => {
                   <Stack gap={2} direction="row">
                     {images2.map((image) => (
                       <Box
-                      key={image}
+                        key={image}
                         component="img"
                         src={image}
                         width="80px"
@@ -108,8 +108,6 @@ export const Pets = () => {
                   </Stack>
                 </Stack>
               </Stack>
-
-              
             </Stack>
           </Stack>
         </Box>

@@ -10,10 +10,9 @@ export const Care = () => {
       justifyContent="center"
       alignItems="center"
       backgroundColor="#189CAB"
-      position='relative'
+      position="relative"
     >
-
-      <Box sx={{ maxWidth: "lg", width: 1 , py:5}}>
+      <Box sx={{ maxWidth: "lg", width: 1, py: 5 }}>
         <Stack
           display="flex"
           direction="row"
@@ -125,7 +124,11 @@ export const Care = () => {
             </Box>
           </Stack>
         </Stack>
-        <Box component="img" src={PetCare} sx={{ position:"absolute", top:"50%", left: 0}}></Box>
+        <Box
+          component="img"
+          src={PetCare}
+          sx={{ position: "absolute", top: "50%", left: 0 }}
+        ></Box>
         <Box
           component="img"
           src={Group}

@@ -1,5 +1,9 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
+import dots from "../images/dots.png";
+import FB from "../images/FB.png";
+import insta from "../images/insta.png";
+import twit from "../images/twit.png";
 
 export const Footer = () => {
   return (
@@ -25,105 +29,114 @@ export const Footer = () => {
           >
             Pet-First
           </Typography>
-          <Stack direction="column" display="flex" gap={2}>
+          <Box component="img" src={dots} width="200px" height="200px" />
+          <Stack direction="column" display="flex">
             <Stack
               direction="row"
               justifyContent="center"
               alignItems="center"
               spacing={3}
             >
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                About
-              </Typography>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Project
-              </Typography>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Service
-              </Typography>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Client
-              </Typography>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Team
-              </Typography>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Blog
-              </Typography>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Contact
-              </Typography>
+              <Button>
+                <Typography
+                  fontSize="13px"
+                  fontWeight={600}
+                  fontFamily="Josefin Sans"
+                  color="#EBE3CC"
+                  lineHeight="60px"
+                >
+                  About
+                </Typography>
+              </Button>
+              <Button>
+                <Typography
+                  fontSize="13px"
+                  fontWeight={600}
+                  fontFamily="Josefin Sans"
+                  color="#EBE3CC"
+                  lineHeight="60px"
+                >
+                  Project
+                </Typography>
+              </Button>
+              <Button>
+                <Typography
+                  fontSize="13px"
+                  fontWeight={600}
+                  fontFamily="Josefin Sans"
+                  color="#EBE3CC"
+                  lineHeight="60px"
+                >
+                  Service
+                </Typography>
+              </Button>
+              <Button>
+                <Typography
+                  fontSize="13px"
+                  fontWeight={600}
+                  fontFamily="Josefin Sans"
+                  color="#EBE3CC"
+                  lineHeight="60px"
+                >
+                  Client
+                </Typography>
+              </Button>
+              <Button>
+                <Typography
+                  fontSize="13px"
+                  fontWeight={600}
+                  fontFamily="Josefin Sans"
+                  color="#EBE3CC"
+                  lineHeight="60px"
+                >
+                  Team
+                </Typography>
+              </Button>
+              <Button>
+                <Typography
+                  fontSize="13px"
+                  fontWeight={600}
+                  fontFamily="Josefin Sans"
+                  color="#EBE3CC"
+                  lineHeight="60px"
+                >
+                  Blog
+                </Typography>
+              </Button>
+              <Button>
+                <Typography
+                  fontSize="13px"
+                  fontWeight={600}
+                  fontFamily="Josefin Sans"
+                  color="#EBE3CC"
+                  lineHeight="60px"
+                >
+                  Contact
+                </Typography>
+              </Button>
             </Stack>
             <Stack direction="row" spacing={3}>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Flow
-              </Typography>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Hello
-              </Typography>
-              <Typography
-                fontSize="20px"
-                fontWeight={600}
-                fontFamily="Josefin Sans"
-                color="#EBE3CC"
-                lineHeight="60px"
-              >
-                Hello
-              </Typography>
+              <Button>
+                <Typography
+                  fontSize="13px"
+                  fontWeight={600}
+                  fontFamily="Josefin Sans"
+                  color="#EBE3CC"
+                  lineHeight="60px"
+                >
+                  Flow
+                </Typography>
+              </Button>
+
+              <Button>
+                <Box component="img" src={FB} width="35px" height="35px" />
+              </Button>
+              <Button>
+                <Box component="img" src={insta} width="35px" height="35px" />
+              </Button>
+              <Button>
+                <Box component="img" src={twit} width="35px" height="35px" />
+              </Button>
             </Stack>
           </Stack>
         </Stack>

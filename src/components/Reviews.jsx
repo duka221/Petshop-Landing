@@ -37,13 +37,14 @@ export const Reviews = () => {
 
   return (
     <Stack
+      pb="50px"
       display="flex"
       justifyContent="center"
       alignItems="center"
       minHeight="100%"
       backgroundColor="#EBE3CC"
     >
-      <Box sx={{ maxWidth: "lg", width: 1,py: 5 }}>
+      <Box sx={{ maxWidth: "lg", width: 1, py: 5 }}>
         <Stack
           direction="row"
           alignItems="center"

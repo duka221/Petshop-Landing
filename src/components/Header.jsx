@@ -19,26 +19,15 @@ const pages = [
   { name: "Modi-Core", path: "/Modi-Core" },
   { name: "Blog", path: "/Blog" },
 ];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar
       position="static"
@@ -103,7 +92,7 @@ function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <Stack
-              key={page.name}
+                key={page.name}
                 sx={{
                   ":hover": { backgroundImage: `url(${Vector})` },
                   width: "118px",
@@ -138,9 +127,8 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip>
               <Button
-                onClick={handleOpenUserMenu}
                 sx={{
                   borderRadius: 50,
                   textTransform: "none",
@@ -154,28 +142,6 @@ function ResponsiveAppBar() {
                 </Typography>
               </Button>
             </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
           </Box>
         </Toolbar>
       </Container>

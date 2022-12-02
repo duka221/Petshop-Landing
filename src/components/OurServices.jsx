@@ -3,7 +3,7 @@ import OurServiceIcon from "../images/OurServiceIcon.png";
 import scissors from "../images/scissors.png";
 import yellowbg from "../images/yellowbg.png";
 import ourservicevec from "../images/ourservicevec.png";
-
+import servicegr from "../images/servicegr.png";
 
 export const OurServices = () => {
   return (
@@ -14,7 +14,11 @@ export const OurServices = () => {
       position="relative"
     >
       <Box sx={{ maxWidth: "lg", width: 1, py: 5 }}>
-      <Box component="img" src={ourservicevec} sx={{ width:150,position:"absolute", top:50, left: 0}}></Box>
+        <Box
+          component="img"
+          src={ourservicevec}
+          sx={{ width: 150, position: "absolute", top: 50, left: 0 }}
+        ></Box>
 
         <Stack
           display="flex"
@@ -37,11 +41,14 @@ export const OurServices = () => {
             alignItems="center"
           >
             <Stack
-    
               width="500px"
               height="580px"
               spacing={3}
-              sx={{ backgroundImage: `url(${yellowbg})`,backgroundRepeat:"no-repeat",p:5 }}
+              sx={{
+                backgroundImage: `url(${yellowbg})`,
+                backgroundRepeat: "no-repeat",
+                p: 5,
+              }}
             >
               <Box
                 component="img"
@@ -121,6 +128,11 @@ export const OurServices = () => {
             </Stack>
           </Stack>
         </Stack>
+        <Box
+          component="img"
+          src={servicegr}
+          sx={{ position: "absolute", top: 1, right: 0 }}
+        />
       </Box>
     </Stack>
   );

@@ -28,7 +28,7 @@ export default function SwipeableTextStepper() {
       <Box
         component="img"
         src={sliderImages[activeStep]}
-        sx={{ width: "400px", height: "496px",  objectFit:"contain" }}
+        sx={{ width: "400px", height: "496px", objectFit: "contain" }}
       />
       <MobileStepper
         variant="dots"
