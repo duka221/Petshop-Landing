@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.f341f9f6.js",
+    "static/js/787.a9feaf32.chunk.js": "/static/js/787.a9feaf32.chunk.js",
+    "static/media/AboutPet.png": "/static/media/AboutPet.bc21fb2658a716d46e7b.png",
+    "static/media/dog1.png": "/static/media/dog1.1960c859e7b1da7c1a4c.png",
+    "static/media/avatar1.png": "/static/media/avatar1.12225f6e36a442f129d1.png",
+    "static/media/ContactDog.png": "/static/media/ContactDog.e228b29d2a0d530c4da9.png",
+    "static/media/dog2.png": "/static/media/dog2.fbe16ab8bd96663e4d3f.png",
+    "static/media/dog3.png": "/static/media/dog3.b32079d28871468dc86b.png",
+    "static/media/DogPic.png": "/static/media/DogPic.4783bd57b7203fc5de8e.png",
+    "static/media/Ellipse 344.png": "/static/media/Ellipse 344.24c78abf46272625aaeb.png",
+    "static/media/Ellipse 340.png": "/static/media/Ellipse 340.4b3d7e7a8f7e10d70cbe.png",
+    "static/media/Ellipse 337.png": "/static/media/Ellipse 337.f3365cc4354727df888b.png",
+    "static/media/Ellipse 341.png": "/static/media/Ellipse 341.edf93eb99fcae3b47fa2.png",
+    "static/media/Ellipse 339.png": "/static/media/Ellipse 339.c0bd490aca0ace022c21.png",
+    "static/media/Ellipse 346.png": "/static/media/Ellipse 346.facb86377da46919d2e2.png",
+    "static/media/Ellipse 336.png": "/static/media/Ellipse 336.aee3de4a456edc0cf246.png",
+    "static/media/Ellipse 335.png": "/static/media/Ellipse 335.f1e6ac58988d1fe30a3b.png",
+    "static/media/Ellipse 345.png": "/static/media/Ellipse 345.787ab00b70b7892efb71.png",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.f341f9f6.js.map": "/static/js/main.f341f9f6.js.map",
+    "787.a9feaf32.chunk.js.map": "/static/js/787.a9feaf32.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f341f9f6.js"
+  ]
+}
