@@ -3,6 +3,7 @@ import { Box, Stack } from "@mui/system";
 import dog1 from "../images/ContactDog.png";
 import rqa from "../images/rqa.png";
 
+
 export const Contact = () => {
   return (
     <Stack
@@ -58,7 +59,7 @@ export const Contact = () => {
               </Typography>
               <TextField
                 id="standard-basic"
-                label="Standard"
+                label="Mail"
                 variant="standard"
                 color="primary"
               />
